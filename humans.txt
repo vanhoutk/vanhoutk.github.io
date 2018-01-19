@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+
+  Kris Vanhoutte - @ _Kris_VH
+
+/* THANKS */
+
+/* SITE */
+
+  Last Update: 19/01/2018
+  Language: English
+  Doctype: HTML
+  IDE: Atom
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

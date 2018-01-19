@@ -74,7 +74,10 @@
 
       <!-- Photography -->
       <div>
-
+        <div>
+          <h1>Photography</h1>
+        </div>
+        <div id="instafeed"></div>
       </div>
 
       <!-- Contact -->
@@ -87,5 +90,17 @@
     <footer>
 
     </footer>
+
+    <!-- Instafeed Scripts -->
+    <script src="js/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+          get: 'user',
+          userId: '3248824062',
+          accessToken: '3248824062.3b411e9.6c2a5751b2cc4452b79b526974cb98d8',
+          limit: 3
+      });
+      userFeed.run();
+    </script>
   </body>
 </html>

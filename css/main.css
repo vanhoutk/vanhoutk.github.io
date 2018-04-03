@@ -97,7 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+#technologies-graph {
+  height: 600px;
+  width: 80%;
+}
 
 
 

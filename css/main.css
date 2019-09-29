@@ -97,22 +97,92 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#technologies-graph {
-  height: 600px;
-  width: 80%;
+* {
+  box-sizing: border-box;
 }
 
+section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  /* grid-auto-flow: dense; */
+}
 
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+.block-title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 100%;
+  background-color: #55b2c5;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+}
 
+.title-text {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: white;
+  margin: auto;
+}
 
+.block-content {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 5%;
+}
 
+#technologies-graph {
+  padding: 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
 
+.logo {
+  height: 48px;
+  width: 48px;
+  color: #222222;
+}
 
+.social-links {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}
 
+.social-link {
+  color: black;
+  opacity: 0.6;
+  font-size: 64px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+}
 
+.social-link:hover {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none;
+}
 
-
+footer {
+  justify-content: center;
+  vertical-align: baseline;
+  background: #ebf4fa;
+}
 
 
 
@@ -206,9 +276,63 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+
+  .section-even .block-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .section-even .block-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .section-odd .block-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .title-text {
+    font-size: 8vw;
+  }
+
+  .social-link {
+    font-size: 8vw;
+  }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title-text {
+    font-size: 96px;
+  }
+
+  .social-link {
+    font-size: 96px;
+  }
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),

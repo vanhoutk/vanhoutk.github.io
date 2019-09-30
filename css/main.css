@@ -102,10 +102,10 @@ textarea {
 }
 
 section {
-  height: 200vh;
+  height: 300vh;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 33% 67%;
   /* grid-auto-flow: dense; */
 }
 

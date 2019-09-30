@@ -102,7 +102,7 @@ textarea {
 }
 
 section {
-  height: 100vh;
+  height: 200vh;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50% 50%;
@@ -141,7 +141,11 @@ section::after {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding: 5%;
+  border: 2px solid blue;
+  padding: 20% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #technologies-graph {
@@ -176,6 +180,18 @@ section::after {
   color: white;
   opacity: 0.9;
   text-decoration: none;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.block-content p {
+
+}
+
+p {
+  font-size: 24px;
 }
 
 footer {
@@ -285,6 +301,7 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   section {
+    height: 100vh;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
   }

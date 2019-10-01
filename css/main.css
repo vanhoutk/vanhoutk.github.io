@@ -102,11 +102,11 @@ textarea {
 }
 
 section {
-  height: 300vh;
+  min-height: 200vh;
+  height: auto;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 33% 67%;
-  /* grid-auto-flow: dense; */
+  grid-template-columns: 100% 0px;
+  grid-template-rows: 100vh auto;
 }
 
 section::after {
@@ -122,9 +122,10 @@ section::after {
   grid-row-end: 2;
   height: 100%;
   background-color: #55b2c5;
-  padding: 0% 5%;
-  display: grid;
-  grid-template-rows: 15% 70% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .title-text {
@@ -134,7 +135,6 @@ section::after {
   font-weight: 400;
   font-size: 64px;
   color: white;
-  margin: auto;
   text-align: center;
 }
 
@@ -165,8 +165,8 @@ section::after {
 }
 
 .social-links {
-  grid-row-start: 3;
-  grid-row-end: 4;
+  bottom: 10%;
+  position: absolute;
   text-align: center;
 }
 
@@ -314,9 +314,10 @@ a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   section {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-rows: auto 0px;
   }
 
   .section-even .block-title {

@@ -185,22 +185,17 @@ section::after {
   text-decoration: none;
 }
 
-.work-and-education {
-    line-height: 1.4;
-}
-
 .work-and-education p {
-  margin: 0.1;
+  font-size: 16px;
 }
-
 
 .interests h2 {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .interests p {
   text-align: left;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 a {
@@ -347,6 +342,15 @@ a:hover {
 
   .social-link {
     font-size: 8vw;
+  }
+
+  .interests h2 {
+    font-size: 32px;
+  }
+
+  .interests p {
+    text-align: left;
+    font-size: 24px;
   }
 }
 
